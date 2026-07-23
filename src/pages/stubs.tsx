@@ -1,21 +1,14 @@
 import SectionHeader from '@/components/SectionHeader';
 
+export { default as CasePage } from './Case';
+export { default as RulesPage } from './Rules';
+
 function Stub({ kicker, title, description }: { kicker: string; title: string; description: string }) {
   return (
     <section className="mx-auto min-h-[60vh] max-w-6xl px-6 py-20">
       <SectionHeader kicker={kicker} title={title} description={description} />
       <p className="font-mono text-xs tracking-widest text-mist-muted">// 页面建设中 · UNDER INVESTIGATION</p>
     </section>
-  );
-}
-
-export function CasePage() {
-  return (
-    <Stub
-      kicker="FILE 01 — CASE FILE"
-      title="案件档案"
-      description="事件报告 · 互动时间线 · 雾岭地图"
-    />
   );
 }
 
@@ -49,12 +42,4 @@ export function BoardPage() {
   );
 }
 
-export function RulesPage() {
-  return (
-    <Stub
-      kicker="FILE 05 — HOW TO PLAY"
-      title="玩法指南"
-      description="调查流程 · 线索清单 · 常见问题"
-    />
-  );
-}
+
