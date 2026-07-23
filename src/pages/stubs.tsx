@@ -1,4 +1,6 @@
 import SectionHeader from '@/components/SectionHeader';
+import Evidence from './Evidence';
+import Suspects from './Suspects';
 
 export { default as CasePage } from './Case';
 export { default as RulesPage } from './Rules';
@@ -13,33 +15,13 @@ function Stub({ kicker, title, description }: { kicker: string; title: string; d
 }
 
 export function EvidencePage() {
-  return (
-    <Stub
-      kicker="FILE 02 — EVIDENCE"
-      title="证物室"
-      description="8 件证物 · 12 条隐藏线索"
-    />
-  );
+  return <Evidence />;
 }
 
 export function SuspectsPage() {
-  return (
-    <Stub
-      kicker="FILE 03 — SUSPECTS"
-      title="嫌疑人"
-      description="4 份口供 · 找出矛盾之处"
-    />
-  );
+  return <Suspects />;
 }
 
-export function BoardPage() {
-  return (
-    <Stub
-      kicker="FILE 04 — DEDUCTION BOARD"
-      title="推理板"
-      description="连线线索 · 最终指控 · 结局揭晓"
-    />
-  );
-}
+export { default as BoardPage } from '@/pages/Board';
 
 
