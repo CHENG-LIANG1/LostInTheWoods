@@ -4,7 +4,32 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        display: ["'ZCOOL XiaoWei'", "serif"],
+        sans: ["'Noto Sans SC'", "sans-serif"],
+        mono: ["'IBM Plex Mono'", "monospace"],
+        hand: ["'Long Cang'", "cursive"],
+      },
       colors: {
+        ink: {
+          DEFAULT: "#0C0F14",
+          surface: "#151A22",
+          deep: "#080A0E",
+        },
+        fog: "#9FB3C8",
+        paper: {
+          DEFAULT: "#EDE6D6",
+          dark: "#D8CDB4",
+        },
+        case: {
+          red: "#E23E2E",
+          amber: "#D9A441",
+          green: "#4E9F6E",
+        },
+        mist: {
+          DEFAULT: "#E8E4DA",
+          muted: "#8B93A0",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
