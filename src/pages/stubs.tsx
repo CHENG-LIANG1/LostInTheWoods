@@ -39,15 +39,7 @@ export function SuspectsPage() {
   );
 }
 
-export function BoardPage() {
-  return (
-    <Stub
-      kicker="FILE 04 — DEDUCTION BOARD"
-      title="推理板"
-      description="连线线索 · 最终指控 · 结局揭晓"
-    />
-  );
-}
+export { default as BoardPage } from '@/pages/Board';
 
 export function RulesPage() {
   return (
