@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { AnimatePresence, motion, useMotionValue, useTransform } from 'framer-motion';
 import { CheckCircle2, Search, X } from 'lucide-react';
 import SectionHeader from '@/components/SectionHeader';
@@ -137,6 +137,15 @@ export default function Evidence() {
   const [tab, setTab] = useState<Tab>('全部');
   const [active, setActive] = useState<EvidenceItem | null>(null);
   const [toasts, setToasts] = useState<ToastData[]>([]);
+  const [searchParams] = useSearchParams();
+
+  // honor deep links like /evidence?open=E-6 (from the case timeline)
+  useEffect(() => {
+    const openId = searchParams.get('open');
+    if (!openId) return;
+    const item = EVIDENCE_ITEMS.find((e) => e.id === openId);
+    if (item) setActive(item);
+  }, [searchParams]);
 
   const count = collectedClues.length;
   const filtered = useMemo(

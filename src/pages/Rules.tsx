@@ -167,18 +167,18 @@ interface ClueEntry {
 }
 
 const CLUES: ClueEntry[] = [
-  { id: 'E-1-a', label: '侧袋的矿泉水是满的——他不缺水', exhibit: 'E-1' },
-  { id: 'E-1-b', label: '背包在溪谷，登山杖却不在', exhibit: 'E-1' },
-  { id: 'E-2-a', label: '17 通未接来电', exhibit: 'E-2' },
-  { id: 'E-2-b', label: '草稿短信：“如果我出事，问赵铭”', exhibit: 'E-2' },
-  { id: 'E-3-a', label: '登山扣断口是人为锯痕', exhibit: 'E-3' },
-  { id: 'E-4-a', label: '字条：“缆车票据能对上时间，但人对不上”', exhibit: 'E-4' },
-  { id: 'E-5-a', label: '凌晨 2 点有人燃放过信号弹', exhibit: 'E-5' },
-  { id: 'E-6-a', label: '缆车购票时间为 10:15', exhibit: 'E-6' },
-  { id: 'E-6-b', label: '售票员记得“只来了四个人”', exhibit: 'E-6' },
-  { id: 'E-7-a', label: '袖口污渍是油漆，与缆车检修漆一致', exhibit: 'E-7' },
-  { id: 'E-8-a', label: '运动相机 SD 卡缺失', exhibit: 'E-8' },
-  { id: 'E-8-b', label: '机身最后定位在缆车站而非溪谷', exhibit: 'E-8' },
+  { id: 'e1-water', label: '侧袋的矿泉水是满的——他不缺水', exhibit: 'E-1' },
+  { id: 'e1-pole', label: '背包在溪谷，登山杖却不在', exhibit: 'E-1' },
+  { id: 'e2-calls', label: '17 通未接来电', exhibit: 'E-2' },
+  { id: 'e2-draft', label: '草稿短信：“如果我出事，问赵铭”', exhibit: 'E-2' },
+  { id: 'e3-saw', label: '登山扣断口是人为锯痕', exhibit: 'E-3' },
+  { id: 'e4-note', label: '字条：“缆车票据能对上时间，但人对不上”', exhibit: 'E-4' },
+  { id: 'e5-flare', label: '凌晨 2 点有人燃放过信号弹', exhibit: 'E-5' },
+  { id: 'e6-time', label: '缆车购票时间为 10:15', exhibit: 'E-6' },
+  { id: 'e6-count', label: '售票员记得“只来了四个人”', exhibit: 'E-6' },
+  { id: 'e7-paint', label: '袖口污渍是油漆，与缆车检修漆一致', exhibit: 'E-7' },
+  { id: 'e8-sd', label: '运动相机 SD 卡缺失', exhibit: 'E-8' },
+  { id: 'e8-gps', label: '机身最后定位在缆车站而非溪谷', exhibit: 'E-8' },
 ];
 
 function ChecklistSection() {
